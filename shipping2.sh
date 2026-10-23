@@ -4,7 +4,6 @@ source ./common.sh
 check_root
 app_setup
 java_setup
-systemd_setup
 
 
 
@@ -27,6 +26,6 @@ mysql -h "mysql.$domain_name" -uroot -pRoboShop@1 < /app/db/app-user.sql
 validate $? "Creating app user"
 
 
-
+systemd_setup
 restart
 total_time
