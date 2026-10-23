@@ -25,6 +25,10 @@ validate(){
         echo -e "$(timestamp) [INFO] ${2} ${G}SUCCESS${N}" | tee -a $logs_file
     fi
 }
+timestamp(){
+    date +"%F %T"
+}
+
 
 total_time(){
     
