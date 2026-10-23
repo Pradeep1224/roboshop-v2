@@ -1,5 +1,5 @@
 #!/bin/bash
-source ./commom.sh
+source ./common.sh
 check_root
 echo "$(timestamp) [INFO] ====script started execution===" | tee -a $logs_file
 
